@@ -15,7 +15,9 @@ export default function Login() {
 					<TextInput type="email" placeholder="Enter Email" icon="alternate_email" />
 					<TextInput type="password" placeholder="Enter Password" icon="lock" />
 
-					<Button>Submit Now</Button>
+					<Button>
+						<span>Submit Now</span>
+					</Button>
 
 					<div className="info">
 						Already have an account? <a href="login.html">Login</a> instead.
