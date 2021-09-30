@@ -3,7 +3,8 @@ import Answers from "../Answers";
 import MiniPlayer from "../MiniPlayer";
 import ProgressBar from "../ProgressBar";
 
-export default function Quiz() {
+export default function Quiz({ name }) {
+	console.log(name);
 	return (
 		<>
 			<h1>Pick three of your favorite Star Wars Flims</h1>
