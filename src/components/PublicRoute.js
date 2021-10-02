@@ -4,5 +4,6 @@ import { useAuth } from "../context/AuthContext";
 
 export default function PublicRoute({ component: Component, ...rest }) {
 	const { currentUser } = useAuth();
-	return !currentUser ? <Route {...rest}>{(props) => <Component {...props} />} </Route> : <Redirect to="/login" />;
+
+	return !currentUser ? <Route {...rest}>{(props) => <Component {...props} />}</Route> : <Redirect to="/" />;
 }
